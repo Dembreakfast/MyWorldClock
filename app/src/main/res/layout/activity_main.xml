@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@android:color/darker_gray"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        >
+
+    <TextView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/welcome"
+        android:background="@drawable/clock_image"
+
+
+        />
+
+
+        <Button
+        android:id="@+id/twentyFour"
+        android:layout_width="100dp"
+        android:layout_height="66dp"
+        android:text="Switch to 24 HR"
+        android:layout_gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/welcome" />
+
+    <ScrollView
+        app:layout_constraintTop_toBottomOf="@id/twelve"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <include
+        android:id="@+id/clockAEST"
+        layout="@layout/clock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        />
+        <include
+            android:id="@+id/clockShanghai"
+            layout="@layout/clock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <include
+            android:id="@+id/clockSanSebastian"
+            layout="@layout/clock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <include
+            android:id="@+id/clockParis"
+            layout="@layout/clock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <include
+            android:id="@+id/clockLA"
+            layout="@layout/clock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <include
+            android:id="@+id/clockNewYork"
+            layout="@layout/clock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <include
+            android:id="@+id/clockPerth"
+            layout="@layout/clock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+
+
+    </LinearLayout>
+    </ScrollView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

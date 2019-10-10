@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+        <TextView
+            android:id="@+id/cityname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SYDNEY"
+            android:textSize="25dp"
+            android:layout_marginTop="25dp"
+            android:padding="7.5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/clock_border"
+            />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="0dp"
+            android:foregroundGravity="center"
+            app:layout_constraintStart_toStartOf="@id/time"
+            app:layout_constraintTop_toBottomOf="@id/cityname"
+            android:id="@+id/photog"
+            app:srcCompat="@drawable/clock_image" />
+
+        <TextView
+
+            app:layout_constraintTop_toBottomOf="@id/cityname"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:gravity="end|center"
+            android:padding="7.5dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginBottom="25dp"
+            android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:text="12:30 pm"
+            android:background="@drawable/clock_border"
+            android:textSize="25dp"
+
+
+            />
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
